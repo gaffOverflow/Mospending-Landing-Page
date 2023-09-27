@@ -1,0 +1,179 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  /* padding: 2rem; */
+  /* text-align: center; */
+  --Primary-Bg: #3734a9;
+  --Secondary-Bg: #fafbff;
+  --Main-Font: "Manrope";
+  --Secondary-Font: "Poppins";
+  --Orange-Accent: #ffa051;
+  --Font-Size-Xl: clamp(0.56rem, 3.54vw + 2.17rem, 5rem);
+  --Font-Size-Lg: clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem);
+  --Font-Size-Sm: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);
+}
+
+.nav {
+  background: var(--Primary-Bg);
+  z-index: -1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 2rem;
+  text-align: center;
+}
+
+.nav div p {
+  position: relative;
+  z-index: 1;
+  padding-block: 2rem;
+  font-family: var(--Main-Font);
+}
+
+.nav div p::before {
+  content: "";
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  background: var(--Orange-Accent);
+  z-index: -1;
+  border-radius: 50%;
+  left: -10px;
+  top: 30px;
+}
+
+.nav ul li {
+  padding-block: 0.7rem;
+  font-family: var(--Main-Font);
+}
+
+.nav ul button {
+  padding: 1rem 30vw;
+  background: #3777f9;
+  border-radius: 3rem;
+  font-family: var(--Main-Font);
+  font-size: 14px;
+  font-weight: 100;
+}
+
+.hero-section {
+  background: var(--Primary-Bg);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: #fff;
+  padding: 2rem;
+  position: relative;
+  z-index: -100;
+}
+
+.hero-section .hero-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-family: var(--Main-Font);
+  text-align: center;
+}
+
+.hero-section .title-note {
+  font-weight: 100;
+  font-family: var(--Main-Font);
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+.hero-section div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-section div input {
+  border-radius: 1.3rem;
+  background: rgba(255, 255, 255, 0.16);
+  padding: 0.5rem 2rem;
+}
+
+.hero-section div input::placeholder {
+  font-size: 0.95rem;
+  font-family: var(--Main-Font);
+  position: relative;
+}
+
+.hero-section div button {
+  position: absolute;
+  background: var(--Orange-Accent);
+  right: 3.2rem;
+  padding: 0.5rem 0.5rem;
+  border-radius: 2rem;
+  font-size: 0.8rem;
+  font-family: var(--Main-Font);
+}
+
+.hero-section img:first-of-type {
+  position: absolute;
+  width: 10vw;
+  right: 0rem;
+  z-index: -1;
+}
+
+.hero-section img:last-of-type {
+  position: absolute;
+  width: 10vw;
+  left: 0rem;
+  bottom: 0rem;
+  z-index: -1;
+}
+
+.features-container{
+  padding: 2rem;
+}
+
+.features-container h1{
+  text-align: center;
+  font-size: 2rem;
+  font-family: var(--Main-Font);
+  padding-bottom: 1rem;
+}
+
+.features-container .features-p{
+  text-align: center;
+  font-size: 1rem;
+  font-family: var(--Main-Font);
+  padding-bottom: 2rem;
+}
+/* .logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
