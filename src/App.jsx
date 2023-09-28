@@ -3,6 +3,7 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import NavBar from "./components/nav";
 import Features from "./components/features";
+import Footer from "./components/footer";
 import "./App.css";
 import Hero from "./components/Hero";
 
@@ -11,10 +12,11 @@ function App() {
 
   return (
     <>
-    <NavBar />
-    <Hero />
-    <Features/>
-      <div className="xl:rounded-none bg-blue-500 rounded-[100px] ">
+      <NavBar />
+      <Hero />
+      <Features />
+      <Footer/>
+      {/* <div className="xl:rounded-none bg-blue-500 rounded-[100px] ">
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
@@ -33,7 +35,7 @@ function App() {
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
-      </p>
+      </p> */}
     </>
   );
 }
